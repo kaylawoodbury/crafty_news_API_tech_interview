@@ -11,7 +11,7 @@ RSpec.describe 'POST /comments', type: :request do
     describe 'successfully creates comment' do
       let!(:article) { create(:article) }
       before do
-        post 'api/comments',
+        post '/api/comments',
              params: {
                comment: {
                  body: 'comment text',

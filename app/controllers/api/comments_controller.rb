@@ -1,6 +1,6 @@
 class Api::CommentsController < ApplicationController
   def create 
-    ping = Ping.create(ping_params)
+    comment = Comment.create()
     render json: { message: 'Your comment has been added'}
   end 
 end
